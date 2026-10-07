@@ -5,74 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SOP-LAB-EQ-33691.07.088216 | Hi-Vol Tisch PM10</title>
   <link rel="stylesheet" href="assets/estilos.css">
+  <script src="assets/interaccion.js" defer></script>
 </head>
 <body>
-  <div class="contenedor">
-    <div class="encabezado">
-      <span class="etiqueta">SOP-LAB-EQ-33691.07.088216</span>
-      <h1>Muestreador Hi-Vol Tisch PM10</h1>
-      <p>Código patrimonial: 33691.07.088216.</p>
-      <p>Matriz: material particulado PM10 en aire ambiente.</p>
-    </div>
+  <div class="wrap">
 
-    <div class="aviso">
-      Piloto en revisión. El campo “Laboratorio” del Word dice “Calidad de Agua”, pero el equipo corresponde a calidad de aire. Además, el cuerpo menciona una comprobación mensual; esta tarjeta usa la verificación trimestral de la portada, según lo acordado.
-    </div>
-
-    <div class="bloque">
-      <h2>Uso del equipo</h2>
-      <p>Estandarizar la calibración volumétrica, el acondicionamiento de filtros, el muestreo de 24 horas y el cálculo gravimétrico de PM10.</p>
-      <p>Referencias del SOP: 40 CFR Part 50 Appendix J, EPA Quality Assurance Handbook y D.S. N.° 003-2017-MINAM.</p>
-    </div>
-
-    <div class="bloque">
-      <h2>Calibración y verificación</h2>
-      <div class="ficha">
-        <div><strong>Calibración externa:</strong> cada 24 meses por laboratorio acreditado ISO/IEC 17025.</div>
-        <div><strong>Verificación interna:</strong> trimestral, antes de cada uso significativo y después de mantenimiento, traslado o incidencia.</div>
-        <div><strong>Criterios de aceptación:</strong> caudal operativo 1.13 m³/min ± 5% (1.07 a 1.19 m³/min / 40 CFM).</div>
-        <div><strong>Patrones de referencia:</strong> kit de calibración de orificio de flujo Tisch TE-5028 con manómetro diferencial.</div>
+    <div class="hero">
+      <div class="brand">
+        <img src="assets/logo_upt.png" alt="Logo UPT" onerror="this.style.display='none'">
+        <img src="assets/logo_epiam.jpg" alt="Logo EPIAM" style="max-height:44px">
       </div>
-      <p>La verificación incluye montaje del orificio patrón, conexión del manómetro, medición en 5 puntos, curva de calibración y ajuste del controlador a 40 CFM.</p>
+      <span class="chip">SOP-LAB-EQ-33691.07.088216</span>
+      <h1>Muestreador Hi-Vol Tisch PM10</h1>
+      <p><strong>Código patrimonial:</strong> 33691.07.088216 · <strong>Laboratorio:</strong> Gabinete de Calidad de Aire</p>
+      <p>Muestreo volumétrico de material particulado PM10 (EPA 40 CFR Part 50 App. J).</p>
     </div>
 
-    <div class="bloque">
-      <h2>Antes de muestrear</h2>
-      <ul>
-        <li>Acondicionar el filtro 24 horas y registrar su tara inicial.</li>
-        <li>Instalar disco gráfico nuevo y verificar nivelación y ubicación de la caseta.</li>
-        <li>Confirmar que el equipo esté dentro de su período vigente de calibración.</li>
-        <li>Registrar el uso en la bitácora antes y después de la sesión.</li>
-      </ul>
+    <img class="banner-foto" src="assets/ref/tischpm10_p5_equipo_portada.png" alt="Foto del muestreador Tisch TE-6070" onerror="this.style.display='none'">
+
+    <div class="seccion">
+      <h2>1. Objetivo</h2>
+      <p>Estabilizar el procedimiento de calibración volumétrica, acondicionamiento de filtros, muestreo de 24 horas y cálculo gravimétrico de PM10 con el muestreador TE-6070.</p>
     </div>
 
-    <div class="bloque">
-      <h2>Muestreo en 3 fases</h2>
-      <ol>
-        <li><strong>Preparación:</strong> instalar el filtro centrado, cerrar la caseta y programar 24 horas continuas.</li>
-        <li><strong>Muestreo:</strong> arrancar el motor, verificar el caudal y registrar el disco gráfico y el horómetro.</li>
-        <li><strong>Cierre:</strong> retirar el filtro, acondicionarlo 24 horas y pesarlo para calcular PM10 en µg/m³.</li>
-      </ol>
-      <p>Si la desviación del flujo supera ±5%, detener el muestreo y recalibrar con el orificio patrón.</p>
+    <div class="seccion">
+      <h2>2. Ficha técnica</h2>
+      <table class="tabla-mini">
+        <tr><th>Parámetro</th><th>Especificación</th></tr>
+        <tr><td>Caudal nominal</td><td>1.13 m³/min (40 CFM) ±5%</td></tr>
+        <tr><td>Rango de caudal</td><td>0.85 a 1.42 m³/min (30-50 CFM)</td></tr>
+        <tr><td>Control de caudal</td><td>MFC con compensación T/P</td></tr>
+        <tr><td>Exactitud</td><td>± 2% de lectura</td></tr>
+        <tr><td>Protección</td><td>Gabinete NEMA 4X · IP66</td></tr>
+      </table>
     </div>
 
-    <div class="bloque">
-      <h2>Seguridad y EPP</h2>
-      <ul>
-        <li>Guantes de nitrilo y pinzas para manipular filtros solo por los bordes.</li>
-        <li>Calzado de seguridad y casco con barboquejo en azoteas.</li>
-        <li>Si el filtro se rompe, la muestra queda anulada.</li>
-        <li>Ante falla o lectura anómala: detener, rotular fuera de servicio y notificar al técnico o coordinador.</li>
-      </ul>
+    <div class="seccion">
+      <h2>3. Calibración y verificación</h2>
+      <div class="caudal">
+        <span class="chip ok">Caudal: 1.13 m³/min ± 5%</span>
+        <span class="chip ok">Rango: 36 a 44 CFM</span>
+      </div>
+      <table class="tabla-mini">
+        <tr><th>Actividad</th><th>Periodicidad</th><th>Patrón</th></tr>
+        <tr><td>Calibración externa de flujo (5 puntos)</td><td>Cada 24 meses — laboratorio acreditado ISO/IEC 17025</td><td>Kit TE-5028 con orificio certificado NIST + manómetro 30”</td></tr>
+        <tr><td>Verificación interna</td><td>Trimestral y antes de cada uso significativo</td><td>TE-5028 / TE-5028A</td></tr>
+        <tr><td>Comprobación de flujo en 1 punto</td><td>Trimestral</td><td>TE-5028A</td></tr>
+      </table>
+      <p>Criterio: caudales de 1.02–1.24 m³/min (36–44 CFM), r ≥ 0.990 y al menos 3 de 5 puntos dentro del rango de aceptación.</p>
     </div>
 
-    <div class="bloque">
-      <h2>Código QR</h2>
-      <div class="qr">Espacio reservado para el QR de esta tarjeta. Se generará con la URL pública final.</div>
-      <p><a class="boton" href="index.html">Volver al índice</a></p>
+    <div class="seccion">
+      <h2>4. Flujo de trabajo (3 fases · 9 pasos)</h2>
+      <div class="fases">
+        <div class="fase-card"><h3>Fase I · Preparación</h3>
+          <ol class="timeline">
+            <li>Acondicionar y pesar filtro inicial (W1).</li>
+            <li>Trasladar en carpeta rígida y colocar disco gráfico.</li>
+            <li>Instalar filtro centrado y asegurar 4 tuercas.</li>
+          </ol>
+        </div>
+        <div class="fase-card"><h3>Fase II · Muestreo 24 h</h3>
+          <ol class="timeline">
+            <li>Programar ciclo de 24 h continuas.</li>
+            <li>Arrancar motor y verificar caudal en la banda 40 CFM ± 2 CFM.</li>
+            <li>Tras 24 h, retirar filtro y plegar con superficie expuesta hacia adentro.</li>
+          </ol>
+        </div>
+        <div class="fase-card"><h3>Fase III · Cierre y pesada</h3>
+          <ol class="timeline">
+            <li>Registrar horómetro y volumen.</li>
+            <li>Acondicionar filtro 24 h y pesar (W2).</li>
+            <li>Calcular PM10 en µg/m³ y archivar disco gráfico.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="pasos-wrap">
+        <div class="pasa-card"><div class="pasa-num">1</div><div><strong>Montaje del orificio</strong> — retirar cabezal PM10 y colocar plato TE-5028.</div></div>
+        <div class="pasa-card"><div class="pasa-num">2</div><div><strong>Manómetro</strong> — conectar manómetro de agua de 30 pulgadas al orificio.</div></div>
+        <div class="pasa-card"><div class="pasa-num">3</div><div><strong>5 puntos</strong> — ajustar placas y registrar lectura de orificio (inH2O).</div></div>
+        <div class="pasa-card"><div class="pasa-num">4</div><div><strong>Curva de regresión</strong> — Qa vs presión del registrador (r ≥ 0.990).</div></div>
+        <div class="pasa-card"><div class="pasa-num">5</div><div><strong>Ajuste a 40 CFM</strong> — fijar tornillo MFC al valor nominal.</div></div>
+      </div>
     </div>
 
-    <p class="pie">Fuente piloto: DOCX `_rev` preservado el 07/10/2026, hash SHA256 A4ADCF52. Datos personales redactados.</p>
+    <div class="seccion">
+      <h2>5. Seguridad y EPP</h2>
+      <div class="epp-grid">
+        <div class="epp"><strong>Guantes y pinzas</strong><br>Manipular filtros solo por los bordes, sin transferir grasas.</div>
+        <div class="epp"><strong>Calzado</strong><br>Suela antideslizante para acceso a azoteas.</div>
+        <div class="epp"><strong>Casco</strong><br>Casco con barboquejo obligatorio en azoteas.</div>
+        <div class="epp"><strong>EPP visual</strong><br>Lentes antiimpacto para limpieza y manejo de equipos.</div>
+      </div>
+      <div class="aviso" style="margin-top:14px">
+        <strong>Contingencia:</strong> filtro roto interrumpe el muestreo (queda anulado); desviación de flujo &gt; ±5% detiene el proceso y obliga a recalibrar mediante el orificio patrón.
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>6. Imágenes de referencia (manual del fabricante)</h2>
+      <div class="img-grid">
+        <figure><img src="assets/ref/tischpm10_p16_kit_te5028_cert_nist.png" alt="Kit TE-5028" loading="lazy"><figcaption>Kit TE-5028 (p. 16)</figcaption></figure>
+        <figure><img src="assets/ref/tischpm10_p34_procedimiento_orificio.png" alt="Procedimiento orificio" loading="lazy"><figcaption>Calibración de orificio (p. 34)</figcaption></figure>
+        <figure><img src="assets/ref/tischpm10_p44_manometro_drenaje.png" alt="Manómetro" loading="lazy"><figcaption>Manómetro / drenaje (p. 44)</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>7. QR de trazabilidad</h2>
+      <div class="qr-box">
+        <img id="qr-tisch" alt="Código QR Hi-Vol" src="assets/qr/qr-tisch.png" onerror="this.style.display='none'">
+        <p>Escanea para abrir esta tarjeta en el navegador.</p>
+        <a class="boton" href="index.html">Volver al índice</a>
+      </div>
+    </div>
+
+    <p class="pie">Fuente: DOCX SOP-LAB-EQ-33691.07.088216 editado 06/10/2026 · Manual TE-6070 PM10 High Volume Air Sampler. Tarjeta piloto; prevalece el SOP completo.</p>
+
   </div>
 </body>
 </html>
