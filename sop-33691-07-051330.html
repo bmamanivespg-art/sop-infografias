@@ -5,75 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SOP-LAB-EQ-33691.07.051330 | Testo 340</title>
   <link rel="stylesheet" href="assets/estilos.css">
+  <script src="assets/interaccion.js" defer></script>
 </head>
 <body>
-  <div class="contenedor">
-    <div class="encabezado">
-      <span class="etiqueta">SOP-LAB-EQ-33691.07.051330</span>
-      <h1>Analizador de gases Testo 340</h1>
-      <p>Código patrimonial: 33691.07.051330.</p>
-      <p>Matriz: emisiones gaseosas y fuentes fijas.</p>
-    </div>
+  <div class="wrap">
 
-    <div class="aviso">
-      Piloto en revisión. El campo “Laboratorio” del Word dice “Calidad de Agua”, pero el equipo corresponde a calidad de aire; está marcado para corrección antes de publicar.
-    </div>
-
-    <div class="bloque">
-      <h2>Uso del equipo</h2>
-      <p>Estandarizar la puesta en marcha, el cero automático, el muestreo en chimeneas y la purga del analizador portátil Testo 340.</p>
-      <p>Referencias del SOP: EPA Method 3A, 7E, 10 y 6C, además del manual del fabricante Testo 340.</p>
-    </div>
-
-    <div class="bloque">
-      <h2>Calibración y verificación</h2>
-      <div class="ficha">
-        <div><strong>Calibración externa:</strong> anual, con mezclas de gases trazables EPA Protocol.</div>
-        <div><strong>Verificación interna:</strong> diaria o en cada muestreo, mediante la fase de cero automático con aire limpio.</div>
-        <div><strong>Criterios de aceptación:</strong> gases en cero 0.0 ppm ± 1 ppm; O2 en aire fresco 20.9% ± 0.2%.</div>
-        <div><strong>Patrones de referencia:</strong> cilindros de mezcla de gases patrón certificados EPA con CO, NO, NO2 y SO2 en N2.</div>
+    <div class="hero">
+      <div class="brand">
+        <img src="assets/logo_upt.png" alt="Logo UPT" onerror="this.style.display='none'">
+        <img src="assets/logo_epiam.jpg" alt="Logo EPIAM" style="max-height:44px">
       </div>
-      <p>La calibración con gas patrón incluye aire limpio para el cero, adaptador de calibración, flujo controlado y aceptación del valor nominal cuando la lectura esté estable.</p>
+      <span class="chip">SOP-LAB-EQ-33691.07.051330</span>
+      <h1>Analizador de gases Testo 340</h1>
+      <p><strong>Código patrimonial:</strong> 33691.07.051330 · <strong>Laboratorio:</strong> Gabinete de Calidad de Aire</p>
+      <p>Emisiones en fuentes fijas (O2, CO, NO, NO2, SO2, temperatura de humos).</p>
     </div>
 
-    <div class="bloque">
-      <h2>Antes de medir</h2>
+    <img class="banner-foto" src="assets/ref/testo340_p1_producto_portada.png" alt="Figura portada manual Testo 340" onerror="this.style.display='none'">
+
+    <div class="seccion">
+      <h2>1. Objetivo</h2>
+      <p>Establecer el procedimiento de puesta en marcha, cero automático, muestreo de chimeneas y purga del analizador portátil Testo 340, aplicable al monitoreo de emisiones gaseosas y fuentes fijas.</p>
+      <h3>Referencias</h3>
       <ul>
-        <li>Encender siempre en aire limpio, lejos de penachos de chimenea.</li>
-        <li>Completar el ciclo automático de cero de aproximadamente 60 segundos.</li>
-        <li>Verificar O2 en 20.9% y comprobar que la trampa esté seca.</li>
-        <li>Revisar filtros, mangueras, sonda, sensores y conexiones.</li>
-        <li>Confirmar que el equipo esté dentro de su período vigente de calibración.</li>
-        <li>Registrar el uso en la bitácora antes y después de la sesión.</li>
+        <li>EPA Method 3A, 7E, 10 y 6C · Manual del fabricante Testo 340 · D.S. N.° 003-2017-MINAM.</li>
       </ul>
     </div>
 
-    <div class="bloque">
-      <h2>Medición en 3 fases</h2>
-      <ol>
-        <li><strong>Arranque:</strong> puesta en marcha en aire limpio e inspección de trampa y filtros.</li>
-        <li><strong>Muestreo:</strong> insertar la sonda, iniciar la bomba, esperar estabilización de 3 a 5 minutos y guardar el punto.</li>
-        <li><strong>Cierre seguro:</strong> retirar la sonda caliente, purgar 5 minutos con aire fresco hasta volver a O2 20.9% y apagar el equipo.</li>
-      </ol>
+    <div class="seccion">
+      <h2>2. Ficha técnica</h2>
+      <table class="tabla-mini">
+        <tr><th>Parámetro</th><th>Especificación</th></tr>
+        <tr><td>Gases medidos</td><td>O2, CO, NO, NO2, SO2, temperatura de humos</td></tr>
+        <tr><td>Rango O2</td><td>0 a 21% vol.</td></tr>
+        <tr><td>Rango CO</td><td>0 a 4000 ppm (hasta 30000 ppm con dilución)</td></tr>
+        <tr><td>Tiempo de respuesta (t90)</td><td>&lt;30 s (O2, CO); &lt;40 s (NOx, SO2)</td></tr>
+        <tr><td>Alimentación</td><td>Li-ion 3.7 V 5.2 Ah (8 h) / AC 100-240 V</td></tr>
+      </table>
     </div>
 
-    <div class="bloque">
-      <h2>Seguridad y EPP</h2>
-      <ul>
-        <li>Respirador para gases ácidos y vapores en plataformas de chimeneas.</li>
-        <li>Guantes térmicos, lentes, casco con barboquejo y arnés para trabajos en altura.</li>
-        <li>No apagar con gases dentro de la celda; purgar siempre.</li>
-        <li>Ante falla o lectura anómala: detener, rotular fuera de servicio y notificar al técnico o coordinador.</li>
-      </ul>
+    <div class="seccion">
+      <h2>3. Calibración y verificación</h2>
+      <div class="caudal">
+        <span class="chip ok">Cero: 0.0 ppm ± 1 ppm</span>
+        <span class="chip ok">O2: 20.9% ± 0.2%</span>
+      </div>
+      <table class="tabla-mini">
+        <tr><th>Actividad</th><th>Periodicidad</th><th>Patrón</th></tr>
+        <tr><td>Calibración con gases patrón</td><td>Anual (laboratorio acreditado con mezcla EPA)</td><td>Cilindros EPA CO, NO, NO2, SO2 en N2</td></tr>
+        <tr><td>Puesta a cero automática</td><td>Diaria / en cada muestreo (60 s en aire limpio)</td><td>—</td></tr>
+        <tr><td>Purga post-medición</td><td>Obligatoria 5 min con aire fresco</td><td>—</td></tr>
+      </table>
+      <p>Requisitos de la recalibración: equipo a 20 min de calentamiento, aire limpio para el cero, tubo de absorción libre, gas de prueba a presión máxima 30 hPa y aceptación del valor nominal cuando la lectura se estabilice.</p>
     </div>
 
-    <div class="bloque">
-      <h2>Código QR</h2>
-      <div class="qr">Espacio reservado para el QR de esta tarjeta. Se generará con la URL pública final.</div>
-      <p><a class="boton" href="index.html">Volver al índice</a></p>
+    <div class="seccion">
+      <h2>4. Flujo de trabajo (3 fases · 9 pasos)</h2>
+      <div class="fases">
+        <div class="fase-card"><h3>Fase I · Arranque e inspección</h3>
+          <ol class="timeline">
+            <li>Puesta en marcha en aire limpio, lejos de penachos.</li>
+            <li>Completar el ciclo automático de cero (~60 s).</li>
+            <li>Verificar O2 en 20.9% y comprobar trampa de condensados.</li>
+          </ol>
+        </div>
+        <div class="fase-card"><h3>Fase II · Muestreo</h3>
+          <ol class="timeline">
+            <li>Insertar la sonda en el ducto y asegurar el cono.</li>
+            <li>Iniciar bomba y monitorear CO, NO, NO2, SO2.</li>
+            <li>Esperar estabilidad 3–5 min y grabar el punto.</li>
+          </ol>
+        </div>
+        <div class="fase-card"><h3>Fase III · Cierre y purga</h3>
+          <ol class="timeline">
+            <li>Retirar la sonda caliente con guantes térmicos.</li>
+            <li>Purgar 5 minutos hasta volver a O2 20.9%.</li>
+            <li>Apagar, desconectar mangueras y guardar en maletín.</li>
+          </ol>
+        </div>
+      </div>
+      <p>Pulsa un paso para marcarlo como realizado.</p>
+      <div class="pasos-wrap">
+        <div class="pasa-card"><div class="pasa-num">1</div><div><strong>Cero en aire fresco</strong> — encender y esperar cuenta regresiva de 60 s.</div></div>
+        <div class="pasa-card"><div class="pasa-num">2</div><div><strong>Comprobar O2</strong> — la celda debe marcar 20.9% vol.</div></div>
+        <div class="pasa-card"><div class="pasa-num">3</div><div><strong>Conectar gas patrón</strong> — cilindro de gases trazables EPA en laboratorio.</div></div>
+        <div class="pasa-card"><div class="pasa-num">4</div><div><strong>Ajuste de ganancia</strong> — comparar lectura con valor nominal; ajustar si difiere > ±2%.</div></div>
+        <div class="pasa-card"><div class="pasa-num">5</div><div><strong>Purga post-calibración</strong> — desconectar gas y purgar 10 min.</div></div>
+      </div>
     </div>
 
-    <p class="pie">Fuente piloto: DOCX `_rev` preservado el 07/10/2026, hash SHA256 90BFB7E9. Datos personales redactados.</p>
+    <div class="seccion">
+      <h2>5. Seguridad y EPP</h2>
+      <div class="epp-grid">
+        <div class="epp"><strong>EPP Altura</strong><br>Casco con barboquejo + arnés cuerpo entero.</div>
+        <div class="epp"><strong>Respiratorio</strong><br>Respirador media cara con filtros para gases ácidos.</div>
+        <div class="epp"><strong>Térmico</strong><br>Guantes de cuero y térmicos para sondas calientes.</div>
+        <div class="epp"><strong>Protección visual</strong><br>Lentes antiimpacto en todo momento.</div>
+      </div>
+      <div class="aviso" style="margin-top:14px">
+        <strong>Contingencia:</strong> ante saturación de sensor, filtros húmedos o error de celda, detener, colocar rótulo «Equipo fuera de servicio» y notificar al coordinador técnico.
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>6. Imágenes de referencia (manual del fabricante)</h2>
+      <p>Extraídas del manual Testo 340 para apoyo visual; el SOP prevalece.</p>
+      <div class="img-grid">
+        <figure><img src="assets/ref/testo340_p15_diagrama_componentes.png" alt="Componentes Testo 340" loading="lazy"><figcaption>Componentes (p. 15)</figcaption></figure>
+        <figure><img src="assets/ref/testo340_p16_interfaces.png" alt="Interfaces Testo 340" loading="lazy"><figcaption>Interfaces (p. 16)</figcaption></figure>
+        <figure><img src="assets/ref/testo340_p17_componentes.png" alt="Detalle componentes" loading="lazy"><figcaption>Batería y sensores (p. 17)</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>7. QR de trazabilidad</h2>
+      <div class="qr-box">
+        <img id="qr-testo" alt="Código QR Testo 340" src="assets/qr/qr-testo340.png" onerror="this.style.display='none'">
+        <p>Escanea para abrir esta tarjeta en el navegador.</p>
+        <a class="boton" href="index.html">Volver al índice</a>
+      </div>
+    </div>
+
+    <p class="pie">Fuente: DOCX SOP-LAB-EQ-33691.07.051330 editado 06/10/2026. Manual: Testo 340 Flue Gas Analyzer Instruction Manual. No publicado para auditorías;prevalece el SOP completo.</p>
+
   </div>
 </body>
 </html>
