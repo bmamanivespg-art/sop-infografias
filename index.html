@@ -3,52 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Piloto de infografías SOP | Laboratorios EPIAM</title>
+  <title>Tarjetas SOP | Laboratorios EPIAM</title>
   <link rel="stylesheet" href="assets/estilos.css">
 </head>
 <body>
-  <div class="contenedor">
-    <div class="encabezado">
-      <span class="etiqueta">Piloto en revisión</span>
+  <div class="wrap">
+    <div class="hero">
+      <div class="brand">
+        <img src="assets/logo_upt.png" alt="Logo UPT" onerror="this.style.display='none'">
+        <img src="assets/logo_epiam.jpg" alt="Logo EPIAM" style="max-height:44px">
+      </div>
+      <span class="chip">EPIAM · Laboratorios</span>
       <h1>Tarjetas operativas de SOP</h1>
-      <p>Resúmenes visuales de dos procedimientos operativos, generados estrictamente a partir de los Word editados manualmente.</p>
-      <p>Estas tarjetas todavía no son una publicación oficial.</p>
+      <p>Resúmenes visuales de procedimientos de los laboratorios, creados a partir de los Word revisados manualmente.</p>
+      <p><em>Versión piloto: solo para revisión; ante dudas prevalece el SOP completo.</em></p>
     </div>
 
     <div class="aviso">
-      Antes de publicar se deben corregir el campo de laboratorio, armonizar la verificación del Hi-Vol y confirmar la URL final para los QR.
+      <strong>Nota:</strong> Las tarjetas resumen el contenido de los SOP editados.
+      Para usar un equipo, revisar siempre el SOP aprobado y la bitácora correspondiente.
     </div>
 
     <div class="tarjetas">
       <div class="tarjeta">
         <h2>SOP-LAB-EQ-33691.07.051330</h2>
-        <p><strong>Analizador de gases Testo 340</strong><br>Código patrimonial: 33691.07.051330</p>
-        <div class="ficha">
-          <div><strong>Calibración externa:</strong> anual con mezclas de gases trazables EPA Protocol.</div>
-          <div><strong>Verificación interna:</strong> diaria o en cada muestreo, con cero automático.</div>
-          <div><strong>Criterio:</strong> gases en cero 0.0 ppm ± 1 ppm; O2 20.9% ± 0.2%.</div>
+        <p><strong>Analizador de gases Testo 340</strong><br>
+           Código patrimonial: 33691.07.051330 · Matriz de aplicación: emisiones gaseosas y fuentes fijas.</p>
+        <div class="caudal">
+          <span class="chip">Calibración externa: anual</span>
+          <span class="chip">Verificación: diaria / cada muestreo</span>
         </div>
-        <a class="boton" href="sop-33691-07-051330.html">Abrir tarjeta</a>
+        <a class="boton" href="sop-33691-07-051330.html">Ver tarjeta</a>
       </div>
 
       <div class="tarjeta">
         <h2>SOP-LAB-EQ-33691.07.088216</h2>
-        <p><strong>Muestreador Hi-Vol Tisch PM10</strong><br>Código patrimonial: 33691.07.088216</p>
-        <div class="ficha">
-          <div><strong>Calibración externa:</strong> cada 24 meses por laboratorio acreditado ISO/IEC 17025.</div>
-          <div><strong>Verificación interna:</strong> trimestral, antes de cada uso significativo y después de eventos.</div>
-          <div><strong>Criterio:</strong> 1.13 m³/min ± 5% (1.07 a 1.19 m³/min).</div>
+        <p><strong>Muestreador Hi-Vol Tisch PM10</strong><br>
+           Código patrimonial: 33691.07.088216 · Matriz de aplicación: material particulado PM10.</p>
+        <div class="caudal">
+          <span class="chip">Calibración externa: cada 24 meses</span>
+          <span class="chip">Verificación: trimestral</span>
         </div>
-        <a class="boton" href="sop-33691-07-088216.html">Abrir tarjeta</a>
+        <a class="boton" href="sop-33691-07-088216.html">Ver tarjeta</a>
       </div>
     </div>
 
-    <div class="bloque">
-      <h2>Códigos QR</h2>
-      <p>Los QR definitivos se generarán cuando se confirme la dirección pública del sitio. Mientras tanto, cada tarjeta tiene un espacio reservado para su QR.</p>
+    <div class="seccion">
+      <h2>Cómo usar estas tarjetas</h2>
+      <ul>
+        <li>Cada tarjeta representa el contenido de un SOP específico y se actualiza con el mismo.</li>
+        <li>Los intervalos y criterios son los registrados en la portada del SOP editado.</li>
+        <li>Las imágenes de referencia se extrajeron de los manuales del fabricante.</li>
+      </ul>
+      <div class="qr-box">
+        <img alt="QR de este sitio" src="assets/qr/qr-index.png" style="width:150px;height:150px;border-radius:10px;border:4px solid var(--amarillo)">
+        <p> Escanea para compartir este directorio de tarjetas.</p>
+      </div>
     </div>
 
-    <p class="pie">Fuente: copias preservadas de los DOCX `_rev` del 06/10/2026. Datos personales redactados en esta versión piloto.</p>
+    <p class="pie">Fuente: extracción estructurada de los SOP editados (Word) · tel. laboratorio (052) 427212 - Anexos 418/412.</p>
   </div>
 </body>
 </html>
